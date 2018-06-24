@@ -1,0 +1,20 @@
+/*!
+ * DumbWays Alumni
+ * By: KencotsTeam
+ */
+
+// import vendor
+@import 'vendors/bootstrap';
+
+// import helpers
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+
+// import layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/section';
+
+// @import pages
+@import 'pages/bootcamp';
