@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="resource/js/bootstrap.min.js" ></script>
 	<link rel="stylesheet" type="text/css" href="">
 </head>
-<body>
+<body style="margin: 0;">
 	<?php 
 		function IncludePage($pages = []){
 			foreach ($pages as $page) {
