@@ -1,8 +1,12 @@
 <?php
 	$pages = [
 		"alumni",
+		"team",
+		"hiring_partner",
+		"testimonial",
+		"schedules",
 		"program_tulition",
-		"patner"
+		"community_partner"
 	];
 	IncludePage($pages)
 ?>
