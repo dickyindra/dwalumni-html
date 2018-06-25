@@ -4,6 +4,8 @@
 	<link rel="stylesheet" href="assets/css/main.css" >
 	<script type="text/javascript" src="resource/js/jquery.min.js" ></script>
 	<script type="text/javascript" src="resource/js/popper.min.js" ></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" >
 	
 	<script type="text/javascript" src="resource/js/bootstrap.min.js" ></script>
 	<link rel="stylesheet" type="text/css" href="">

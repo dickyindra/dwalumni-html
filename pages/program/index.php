@@ -1,5 +1,6 @@
 <?php
 	$pages = [
+		"alumni",
 		"program_tulition",
 		"patner"
 	];

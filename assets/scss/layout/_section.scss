@@ -12,8 +12,7 @@ section {
       }
     }
   }
-  // bg color
-  &.bg-grey {
-    background-color: $greycolor;
+  .section-body {
+    @extend .pt-3;
   }
 }

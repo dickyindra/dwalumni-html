@@ -11,10 +11,17 @@
 @import 'helpers/functions';
 @import 'helpers/mixins';
 
+// import base
+@import 'base/global';
+@import 'base/backgroundcolor';
+
 // import layout
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/section';
+
+// import components
+@import 'components/tabs';
 
 // @import pages
 @import 'pages/bootcamp';
