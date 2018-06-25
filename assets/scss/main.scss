@@ -11,6 +11,9 @@
 @import 'helpers/functions';
 @import 'helpers/mixins';
 
+// import base
+@import 'base/global';
+
 // import layout
 @import 'layout/header';
 @import 'layout/footer';
