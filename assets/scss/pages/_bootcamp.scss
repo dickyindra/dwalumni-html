@@ -97,13 +97,28 @@ $sm-items: (
     }
   }
   .owl-carousel .owl-nav {
+    text-align: center;
     .owl-prev, .owl-next {
-      font-family: "Font Awesome 5 Free";
+      @extend .mx-1;
+      @extend .text-primary;
     }
-    .owl-prev {
-      &:before {
-        content: "\f053";
-        margin-right:10px;
+  }
+}
+
+// schedules section
+.schedules {
+  .card-schedule {
+    .card-body {
+      @extend .px-5;
+      border-top: 5px solid $primarycolor;
+      .body-header {
+        border-bottom: 1px solid #F1F1F1;
+      }
+      .body-list {
+        @extend .p-0;
+        @extend .pt-3;
+        list-style: none;
+        font-size: 14px;
       }
     }
   }
