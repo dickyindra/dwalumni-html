@@ -4200,7 +4200,7 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
-.bg-white, .nav-underlined .nav-link {
+.bg-white, .nav-underlined .nav-link, .schedules .card-schedule .card-footer {
   background-color: #fff !important; }
 
 .bg-transparent {
@@ -4260,7 +4260,7 @@ button.bg-dark:focus {
 .border-dark {
   border-color: #343a40 !important; }
 
-.border-white {
+.border-white, .schedules .card-schedule .card-footer {
   border-color: #fff !important; }
 
 .rounded {
@@ -4302,7 +4302,7 @@ button.bg-dark:focus {
 .d-inline-block {
   display: inline-block !important; }
 
-.d-block, .team .team-item .item-body .job {
+.d-block, .team .team-item .item-body .job, .schedules .card-schedule .card-footer .btn {
   display: block !important; }
 
 .d-table {
@@ -5172,7 +5172,7 @@ button.bg-dark:focus {
 .mx-5 {
   margin-left: 3rem !important; }
 
-.p-0, .schedules .card-schedule .card-body .body-list {
+.p-0, .schedules .card-schedule .card-body .body-list, .schedules .card-schedule .card-footer {
   padding: 0 !important; }
 
 .pt-0,
@@ -5254,7 +5254,8 @@ button.bg-dark:focus {
   padding: 1.5rem !important; }
 
 .pt-4,
-.py-4 {
+.py-4,
+.schedules .card-schedule .card-body {
   padding-top: 1.5rem !important; }
 
 .pr-4,
@@ -5262,7 +5263,8 @@ button.bg-dark:focus {
   padding-right: 1.5rem !important; }
 
 .pb-4,
-.py-4 {
+.py-4,
+.schedules .card-schedule .card-body {
   padding-bottom: 1.5rem !important; }
 
 .pl-4,
@@ -6590,12 +6592,14 @@ section .section-header .section-title {
 .testimonial .owl-carousel .owl-nav {
   text-align: center; }
 
-.schedules .card-schedule .card-body {
-  border-top: 5px solid #e51b23; }
-  .schedules .card-schedule .card-body .body-header {
-    border-bottom: 1px solid #F1F1F1; }
-  .schedules .card-schedule .card-body .body-list {
-    list-style: none;
-    font-size: 14px; }
+.schedules .card-schedule {
+  border: none; }
+  .schedules .card-schedule .card-body {
+    border-top: 5px solid #e51b23; }
+    .schedules .card-schedule .card-body .body-header {
+      border-bottom: 1px solid #F1F1F1; }
+    .schedules .card-schedule .card-body .body-list {
+      list-style: none;
+      font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,13 @@
 <?php
 	$pages = [
-		
-		"tab-profil",
-		"exam-result",
-		"articles"
+
+		"alumni",
+		"team",
+		"hiring_partner",
+		"testimonial",
+		"schedules",
+		"program_tulition",
+		"community_partner"
 
 	];
 	IncludePage($pages)
