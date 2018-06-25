@@ -1,8 +1,10 @@
 <?php
 	$pages = [
-		"alumni",
-		"program_tulition",
-		"patner"
+		
+		"tab-profil",
+		"exam-result",
+		"articles"
+
 	];
 	IncludePage($pages)
 ?>

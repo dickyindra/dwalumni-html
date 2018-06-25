@@ -1,0 +1,19 @@
+.card-icon-link{
+	font-size: 25px;
+	float: right;
+	margin-top: 15px;
+}
+.text-bold{
+	font-weight: bold;
+}
+.text-note{
+	font-size: 14px;
+	color: #95a5a6
+}
+.item-left{
+	float: left;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+}
