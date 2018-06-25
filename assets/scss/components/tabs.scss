@@ -1,0 +1,12 @@
+.nav-underlined {
+  .nav-link {
+    @include border-radius($nav-pills-border-radius);
+  	@extend .bg-white
+    @extend .text-muted
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    @extend .text-black
+  }
+}
