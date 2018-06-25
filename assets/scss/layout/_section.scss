@@ -1,0 +1,19 @@
+section {
+  @extend .py-5;
+  // section header
+  .section-header {
+    .section-title {
+      color: $section-header-font-color;
+
+      font-size: $section-header-font-size;
+      font-weight: bold;
+      .underlined {
+        border-bottom: 2px solid $primarycolor;
+      }
+    }
+  }
+  // bg color
+  &.bg-grey {
+    background-color: $greycolor;
+  }
+}
