@@ -108,8 +108,10 @@ $sm-items: (
 // schedules section
 .schedules {
   .card-schedule {
+    border: none;
     .card-body {
       @extend .px-5;
+      @extend .py-4;
       border-top: 5px solid $primarycolor;
       .body-header {
         border-bottom: 1px solid #F1F1F1;
@@ -119,6 +121,14 @@ $sm-items: (
         @extend .pt-3;
         list-style: none;
         font-size: 14px;
+      }
+    }
+    .card-footer {
+      @extend .p-0;
+      @extend .bg-white;
+      @extend .border-white;
+      .btn {
+        @extend .d-block;
       }
     }
   }
