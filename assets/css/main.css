@@ -4200,7 +4200,7 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
-.bg-white {
+.bg-white, .nav-underlined .nav-link {
   background-color: #fff !important; }
 
 .bg-transparent {
@@ -6415,13 +6415,16 @@ a.text-danger:hover, a.text-danger:focus {
 a.text-light:hover, a.text-light:focus {
   color: #dae0e5 !important; }
 
-.text-dark {
+.text-dark, .nav-underlined .nav-link.active,
+.nav-underlined .show > .nav-link {
   color: #343a40 !important; }
 
-a.text-dark:hover, a.text-dark:focus {
+a.text-dark:hover, .nav-underlined a.nav-link.active:hover,
+.nav-underlined .show > a.nav-link:hover, a.text-dark:focus, .nav-underlined a.nav-link.active:focus,
+.nav-underlined .show > a.nav-link:focus {
   color: #1d2124 !important; }
 
-.text-muted {
+.text-muted, .nav-underlined .nav-link {
   color: #6c757d !important; }
 
 .text-hide {
@@ -6524,6 +6527,9 @@ section .section-header .section-title {
   font-weight: bold; }
   section .section-header .section-title .underlined {
     border-bottom: 2px solid #e51b23; }
+
+.nav-underlined .nav-link {
+  border-radius: 0.25rem; }
 
 .team .team-item .item-image {
   width: 100%;
