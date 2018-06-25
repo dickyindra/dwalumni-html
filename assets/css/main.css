@@ -5081,7 +5081,9 @@ button.bg-dark:focus {
   margin-top: 0.25rem !important; }
 
 .mr-1,
-.mx-1 {
+.mx-1,
+.testimonial .owl-carousel .owl-nav .owl-prev,
+.testimonial .owl-carousel .owl-nav .owl-next {
   margin-right: 0.25rem !important; }
 
 .mb-1,
@@ -5089,7 +5091,9 @@ button.bg-dark:focus {
   margin-bottom: 0.25rem !important; }
 
 .ml-1,
-.mx-1 {
+.mx-1,
+.testimonial .owl-carousel .owl-nav .owl-prev,
+.testimonial .owl-carousel .owl-nav .owl-next {
   margin-left: 0.25rem !important; }
 
 .m-2 {
@@ -5168,7 +5172,7 @@ button.bg-dark:focus {
 .mx-5 {
   margin-left: 3rem !important; }
 
-.p-0 {
+.p-0, .schedules .card-schedule .card-body .body-list {
   padding: 0 !important; }
 
 .pt-0,
@@ -5230,7 +5234,7 @@ button.bg-dark:focus {
 .p-3 {
   padding: 1rem !important; }
 
-.pt-3, section .section-body, .team .team-item .item-body,
+.pt-3, section .section-body, .team .team-item .item-body, .schedules .card-schedule .card-body .body-list,
 .py-3 {
   padding-top: 1rem !important; }
 
@@ -5274,7 +5278,8 @@ section {
   padding-top: 3rem !important; }
 
 .pr-5,
-.px-5 {
+.px-5,
+.schedules .card-schedule .card-body {
   padding-right: 3rem !important; }
 
 .pb-5,
@@ -5283,7 +5288,8 @@ section {
   padding-bottom: 3rem !important; }
 
 .pl-5,
-.px-5 {
+.px-5,
+.schedules .card-schedule .card-body {
   padding-left: 3rem !important; }
 
 .m-auto {
@@ -6373,10 +6379,10 @@ section {
 .text-white {
   color: #fff !important; }
 
-.text-primary {
+.text-primary, .testimonial .owl-carousel .owl-nav .owl-prev, .testimonial .owl-carousel .owl-nav .owl-next {
   color: #e51b23 !important; }
 
-a.text-primary:hover, a.text-primary:focus {
+a.text-primary:hover, .testimonial .owl-carousel .owl-nav a.owl-prev:hover, .testimonial .owl-carousel .owl-nav a.owl-next:hover, a.text-primary:focus, .testimonial .owl-carousel .owl-nav a.owl-prev:focus, .testimonial .owl-carousel .owl-nav a.owl-next:focus {
   color: #b8151b !important; }
 
 .text-secondary {
@@ -6502,12 +6508,12 @@ a.text-dark:hover, .nav-underlined a.nav-link.active:hover,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 .z-depth-1 {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
 .z-depth-2 {
-  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 .z-depth-3 {
   -webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
@@ -6520,6 +6526,9 @@ a.text-dark:hover, .nav-underlined a.nav-link.active:hover,
 .z-depth-5 {
   -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
+
+.bg-grey {
+  background-color: #f8f8f8; }
 
 section .section-header .section-title {
   color: #333333;
@@ -6578,10 +6587,15 @@ section .section-header .section-title {
   .testimonial .testimonial-item .testimonial-image img {
     width: 100%;
     height: auto; }
-.testimonial .owl-carousel .owl-nav .owl-prev, .testimonial .owl-carousel .owl-nav .owl-next {
-  font-family: "Font Awesome 5 Free"; }
-.testimonial .owl-carousel .owl-nav .owl-prev:before {
-  content: "\f053";
-  margin-right: 10px; }
+.testimonial .owl-carousel .owl-nav {
+  text-align: center; }
+
+.schedules .card-schedule .card-body {
+  border-top: 5px solid #e51b23; }
+  .schedules .card-schedule .card-body .body-header {
+    border-bottom: 1px solid #F1F1F1; }
+  .schedules .card-schedule .card-body .body-list {
+    list-style: none;
+    font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */
