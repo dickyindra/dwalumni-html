@@ -1,0 +1,13 @@
+.nav-underlined {
+  .nav-link {
+    @extend .bg-white;
+    @extend .text-muted;
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    @extend .text-dark;
+    @extend .font-weight-bold;
+    border-bottom: 2px solid $primary-color;
+  }
+}

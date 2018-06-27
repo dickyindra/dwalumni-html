@@ -1,0 +1,135 @@
+$sm-items: (
+  ('github', #333333),
+  ('facebook', #2196F3),
+  ('linkedin', #1976D2)
+);
+
+.team {
+  .team-item {
+    .item-image {
+      width: 100%;
+      max-height: 240px;
+
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .item-body {
+      @extend .pt-3;
+      .name {
+        font-size: 16px;
+        font-weight: bold;
+
+        text-align: center;
+      }
+      .job {
+        @extend .d-block;
+
+        color: #555555;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    .item-sm {
+      @extend .text-center;
+      @extend .mt-2;
+      a {
+        @extend .px-1;
+        color: #A1A1A1 !important;
+        &:hover {
+          @each $brand, $color in $sm-items {
+            i.fa-#{$brand} {
+              color: $color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.partner {
+  .partner-item {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    .partner-image {
+      width: auto;
+      height: 50px;
+    }
+  }
+}
+
+.testimonial {
+  .testimonial-item {
+    @extend .row;
+    .testimonial-body {
+      @extend .col-sm-8;
+      .written {
+        font-size: 18px;
+        font-weight: bold;
+        &:before {
+          content: "-";
+          margin-right: 10px;
+        }
+        .job {
+          &:before {
+            content: ", ";
+          }
+          font-size: 16px;
+          color: #888888;
+          font-weight: normal;
+        }
+      }
+    }
+    .testimonial-image {
+      @extend .col-sm-4;
+
+      width: 100%;
+      max-height: 240px;
+
+      overflow: hidden;
+      img {
+          width: 100%;
+          height: auto;
+      }
+    }
+  }
+  .owl-carousel .owl-nav {
+    text-align: center;
+    .owl-prev, .owl-next {
+      @extend .mx-1;
+      @extend .text-primary;
+    }
+  }
+}
+
+// schedules section
+.schedules {
+  .card-schedule {
+    border: none;
+    .card-body {
+      @extend .px-5;
+      @extend .py-4;
+      border-top: 5px solid $primarycolor;
+      .body-header {
+        border-bottom: 1px solid #F1F1F1;
+      }
+      .body-list {
+        @extend .p-0;
+        @extend .pt-3;
+        list-style: none;
+        font-size: 14px;
+      }
+    }
+    .card-footer {
+      @extend .p-0;
+      @extend .bg-white;
+      @extend .border-white;
+      .btn {
+        @extend .d-block;
+      }
+    }
+  }
+}
