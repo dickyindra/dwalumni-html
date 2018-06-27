@@ -1,0 +1,16 @@
+.active-tab{
+	background-color: #fff;
+	color:#3498db;
+}
+.inactive-tab{
+	background-color: #3498db;
+	color: #fff;
+}
+.nav-link:hover{
+	background-color: #fff;
+	color: #2980b9;
+}
+.big-icon{
+	font-size:100px;
+}
+
